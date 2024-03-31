@@ -101,8 +101,8 @@ export const AudioPlayerComponent = () => {
             console.log("WebSocket connected");
         };
 
-        socket.onerror = (ev) => {
-            console.error("WebSocket error:", ev);
+        socket.onerror = () => {
+            console.error("WebSocket error");
         };
 
         if (start) {
@@ -111,11 +111,8 @@ export const AudioPlayerComponent = () => {
 
                 if (currentMusicID !== parseInt(data.Id)) {
                     setMusic(data);
-                    console.log("update", currentMusicID, " to ", data.Id);
                     currentMusicID = parseInt(data.Id);
                 }
-
-                console.log(data);
 
                 if (!audioContextRef.current) {
                     audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
