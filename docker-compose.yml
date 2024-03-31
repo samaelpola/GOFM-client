@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    app:
+        build: .
+        image: go-fm-client:latest
+        ports:
+            - "8084:5173"
+        volumes:
+            - ./:/app
+        env_file:
+            - .env
+        networks:
+            - go-fm-network
+
+networks:
+    go-fm-network:
+        external: true
