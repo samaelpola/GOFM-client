@@ -5,9 +5,8 @@ Creating app client for streaming server.
 Pre required to run the app:
 
 - have docker installed on your pc
-- have launched the goFm server streaming
+- have launched the goFm server streaming (https://github.com/samaelpola/GoFM)
 
-#
 
 ## Getting Started
 
@@ -19,7 +18,6 @@ make
 
 Open http://localhost:8084 with your browser to have access to the app.
 
-#
 
 ## Command useful
 
