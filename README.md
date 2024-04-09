@@ -17,7 +17,7 @@ make
 ```
 
 Open http://localhost:8084 with your browser to have access to the app. \
-To access the server from your browser, retrieve the ca.crt file from the GOFM-sever/cert/ca.cert folder (https://github.com/samaelpola/GoFM) and add it to your browser's ssl authority.
+To access the server from your browser, retrieve the ca.crt file from the GOFM/cert/ca.cert folder (https://github.com/samaelpola/GoFM) and add it to your browser's ssl authority.
 
 
 ## Command useful
